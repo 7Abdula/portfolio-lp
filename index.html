@@ -1,252 +1,282 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
-    <title>PORTFOLIO</title>
-  </head>
-  <body class="font-poppins">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+  <title>PORTFOLIO</title>
+</head>
+
+<body class="font-poppins">
 
 
-    <!-- Navbar -->
-    <nav 
-      x-data="{ open: false }"
-      class=" bg-gray-50 border-b border-gray-100">
-      <div class="container mx-auto flex md:px-20 px-5 py-5 items-center">
-        <img src="./assets/logo.svg" alt="logo" class="cursor-pointer">
-        <h1 class="ml-3 font-semibold text-2xl text-teal-800 tracking-widest">PORTFOLIO</h1>
-        
-        <ul class="md:flex md:flex-row flex-col items-center gap-6 text-teal-800 hidden ml-auto font-medium tracking-widest">
-          <li><a href="#projects" class="hover:font-light hover:text-gray-700">Projects</a></li>
-          <li><a href="#skills" class="hover:font-light hover:text-gray-700">Skills</a></li>
-          <li><a href="#contacts" class="hover:font-light hover:text-gray-700">Contacts</a></li>
-        </ul>
-        <div class="ml-auto shrink-0 flex flex-col overflow-hidden md:hidden">
-          <button href="" class="pt-2" @click="open = !open">
-            <img src="./assets/bars.svg" alt="hamburger-icon">
-          </button>
-            
-            <!-- Mobile nav -->
-            <div x-show="open" class="w-full mt-[60px] absolute left-0 top-0 bg-gray-50 border-b border-gray-100" @click.outside="open = false" x-transition>
-              <ul class="flex flex-col items-center mt-4 gap-4 py-8 text-gray-700 tracking-widest w-fit mx-auto" @click="open = false">
-                <li><a href="#projects" class="hover:font-medium hover:text-teal-800">Projects</a></li>
-                <li><a href="#skills" class="hover:font-medium hover:text-teal-800">Skills</a></li>
-                <li><a href="#contacts" class="hover:font-medium hover:text-teal-800">Contacts</a></li>
-              </ul>
-            </div>
+  <!-- Navbar -->
+  <nav x-data="{ open: false }" class=" bg-gray-50 border-b border-gray-100">
+    <div class="container mx-auto flex md:px-20 px-5 py-5 items-center">
+      <img src="./assets/logo.svg" alt="logo" class="cursor-pointer">
+      <h1 class="ml-3 font-semibold text-2xl text-teal-800 tracking-widest">PORTFOLIO</h1>
+
+      <ul
+        class="md:flex md:flex-row flex-col items-center gap-6 text-teal-800 hidden ml-auto font-medium tracking-widest">
+        <li><a href="#projects" class="hover:font-light hover:text-gray-700">Projects</a></li>
+        <li><a href="#skills" class="hover:font-light hover:text-gray-700">Skills</a></li>
+        <li><a href="#contacts" class="hover:font-light hover:text-gray-700">Contacts</a></li>
+      </ul>
+      <div class="ml-auto shrink-0 flex flex-col overflow-hidden md:hidden">
+        <button href="" class="pt-2" @click="open = !open">
+          <img src="./assets/bars.svg" alt="hamburger-icon">
+        </button>
+
+        <!-- Mobile nav -->
+        <div x-show="open" class="w-full mt-[60px] absolute left-0 top-0 bg-gray-50 border-b border-gray-100"
+          @click.outside="open = false" x-transition>
+          <ul class="flex flex-col items-center mt-4 gap-4 py-8 text-gray-700 tracking-widest w-fit mx-auto"
+            @click="open = false">
+            <li><a href="#projects" class="hover:font-medium hover:text-teal-800">Projects</a></li>
+            <li><a href="#skills" class="hover:font-medium hover:text-teal-800">Skills</a></li>
+            <li><a href="#contacts" class="hover:font-medium hover:text-teal-800">Contacts</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
 
-    <!-- Hero section -->
-    <section class="hero pt-10 pb-16 md:pb-0 px-8 container mx-auto">
-      <img src="./assets/hero-pic.svg" alt="hero-picture" class="w-[230px] md:w-[400px] mx-auto">
-      <div class="text-center mx-auto xl:w-7/12">
-        <h1 class="text-gray-600 font-light text-2xl md:text-4xl mt-8 tracking-widest">Hi, I am <span class="text-teal-800 font-semibold">Abdula</span></h1>
-        <p class="font-light text-gray-600 text-sm md:text-xl leading-5 mt-3 sm:px-20 mx-auto">I’m a <span class="font-medium">front end developer.</span> I have a nanodegree in front-end web development from Udacity. I am seeking to have the opportunity to work as a junior front-end developer.</p>
-      </div>
-    </section>
+  <!-- Hero section -->
+  <section class="hero pt-10 pb-16 md:pb-0 px-8 container mx-auto">
+    <img src="./assets/hero-pic.svg" alt="hero-picture" class="w-[230px] md:w-[400px] mx-auto">
+    <div class="text-center mx-auto xl:w-7/12">
+      <h1 class="text-gray-600 font-light text-2xl md:text-4xl mt-8 tracking-widest">Hi, I am <span
+          class="text-teal-800 font-semibold">Abdula</span></h1>
+      <p class="font-light text-gray-600 text-sm md:text-xl leading-5 mt-3 sm:px-20 mx-auto">I’m a <span
+          class="font-medium">front end developer.</span> I have a nanodegree in front-end web development from Udacity.
+        I am seeking to have the opportunity to work as a junior front-end developer.</p>
+    </div>
+  </section>
 
 
-    <!-- Projects -->
-    <section id="projects" class="projects pt-14 pb-24 bg-gray-50 border-y border-gray-100">
-      <h1 class="font-semibold text-2xl text-teal-800 text-center tracking-widest">PROJECTS</h1>
-      
-      <!-- Project cards -->
-      <div class="px-10 pt-14 flex flex-wrap justify-center items-center gap-14 container mx-auto">
+  <!-- Projects -->
+  <section id="projects" class="projects pt-14 pb-24 bg-gray-50 border-y border-gray-100">
+    <h1 class="font-semibold text-2xl text-teal-800 text-center tracking-widest">PROJECTS</h1>
 
-        <!-- Card 1 -->
-        <div class="py-10 px-9 rounded-lg text-center bg-white drop-shadow-[0_8px_12px_rgba(122,122,122,0.1)] max-w-sm hover:-translate-y-4 transition ease-out duration-300">
-          <h1 class="font-semibold text-gray-700 text-xl">Project 1</h1>
-          <p class="font-light text-gray-600 text-sm leading-5 tracking-wide mt-4">Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam</p>
-          <h2 class="font-medium text-base text-gray-700 mt-5">Technologies</h2>
-          <p class="text-sm text-gray-500 mt-1 tracking-wide">Tailwindcss | ReactJS | Vite</p>
+    <!-- Project cards -->
+    <div class="px-10 pt-14 flex flex-wrap justify-center items-center gap-14 container mx-auto">
 
-          <div class="flex justify-around mt-8">
-            <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.5 11.6667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H8.33333M11.25 8.75L17.5 2.5L11.25 8.75ZM13.3333 2.5H17.5V6.66667L13.3333 2.5Z" stroke="#115E59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Live demo
-            </a>
-            <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="#115E59"/>
-                </svg>
-                View code
-            </a>
-          </div>
+      <!-- Card 1 -->
+      <div
+        class="py-10 px-9 rounded-lg text-center bg-white drop-shadow-[0_8px_12px_rgba(122,122,122,0.1)] max-w-sm hover:-translate-y-4 transition ease-out duration-300">
+        <h1 class="font-semibold text-gray-700 text-xl">Project 1</h1>
+        <p class="font-light text-gray-600 text-sm leading-5 tracking-wide mt-4">Amet asperiores et impedit aliquam
+          consectetur? Voluptates sed a nulla ipsa officia et esse aliquam</p>
+        <h2 class="font-medium text-base text-gray-700 mt-5">Technologies</h2>
+        <p class="text-sm text-gray-500 mt-1 tracking-wide">Tailwindcss | ReactJS | Vite</p>
+
+        <div class="flex justify-around mt-8">
+          <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.5 11.6667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H8.33333M11.25 8.75L17.5 2.5L11.25 8.75ZM13.3333 2.5H17.5V6.66667L13.3333 2.5Z"
+                stroke="#115E59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Live demo
+          </a>
+          <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                fill="#115E59" />
+            </svg>
+            View code
+          </a>
         </div>
-
-        <!-- Card 2 -->
-        <div class="py-10 px-9 rounded-lg text-center bg-white drop-shadow-[0_8px_12px_rgba(122,122,122,0.1)] max-w-sm hover:-translate-y-4 transition ease-out duration-300">
-          <h1 class="font-semibold text-gray-700 text-xl">Project 3</h1>
-          <p class="font-light text-gray-600 text-sm leading-5 tracking-wide mt-4">Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam</p>
-          <h2 class="font-medium text-base text-gray-700 mt-5">Technologies</h2>
-          <p class="text-sm text-gray-500 mt-1 tracking-wide">Tailwindcss | ReactJS | Vite</p>
-
-          <div class="flex justify-around mt-8">
-            <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.5 11.6667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H8.33333M11.25 8.75L17.5 2.5L11.25 8.75ZM13.3333 2.5H17.5V6.66667L13.3333 2.5Z" stroke="#115E59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Live demo
-            </a>
-            <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="#115E59"/>
-                </svg>
-                View code
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="py-10 px-9 rounded-lg text-center bg-white drop-shadow-[0_8px_12px_rgba(122,122,122,0.1)] max-w-sm hover:-translate-y-4 transition ease-out duration-300">
-          <h1 class="font-semibold text-gray-700 text-xl">Project 3</h1>
-          <p class="font-light text-gray-600 text-sm leading-5 tracking-wide mt-4">Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam</p>
-          <h2 class="font-medium text-base text-gray-700 mt-5">Technologies</h2>
-          <p class="text-sm text-gray-500 mt-1 tracking-wide">Tailwindcss | ReactJS | Vite</p>
-
-          <div class="flex justify-around mt-8">
-            <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.5 11.6667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H8.33333M11.25 8.75L17.5 2.5L11.25 8.75ZM13.3333 2.5H17.5V6.66667L13.3333 2.5Z" stroke="#115E59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Live demo
-            </a>
-            <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill="#115E59"/>
-                </svg>
-                View code
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Skills section -->
-    <section id="skills" class="pt-14 pb-20 container mx-auto">
-      <h1 class="font-semibold text-2xl text-teal-800 text-center tracking-widest">SKILLS</h1>
-      
-      <!-- Skills Icons -->
-      <div class="pt-14 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 auto-cols-auto	 gap-14 w-max mx-auto">
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/html5-icon.svg" alt="html-icon" class="w-8 md:w-10">
-          <h4 class="text-xs text-gray-600 mt-1">HTML5</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/css3-icon.svg" alt="css-icon" class="w-8 md:w-10">
-          <h4 class="text-xs text-gray-600 mt-1">CSS3</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/tailwindcss-icon.svg" alt="tailwindcss-icon" class="w-8 pt-2 md:w-10">
-          <h4 class="text-xs text-gray-600 mt-1">Tailwindcss</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/js-icon.svg" alt="js-icon" class="w-8 md:w-10">
-          <h4 class="text-xs text-gray-600 mt-1">JavaScript</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/react-icon.svg" alt="react-icon" class="w-8 pt-1 md:w-10">
-          <h4 class="text-xs text-gray-600">React</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/alpinejs-icon.svg" alt="alpinejs-icon" class="pt-2 md:w-12">
-          <h4 class="text-xs text-gray-600">Alpine.js</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/sass-icon.svg" alt="sass-icon" class="w-9 md:w-12">
-          <h4 class="text-xs text-gray-600 mt-1">Sass</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/figma-icon.svg" alt="figma-icon" class="w-5 md:w-8">
-          <h4 class="text-xs text-gray-600 mt-1">Figma</h4>
-        </div>
-        
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/npm-icon.svg" alt="npm-icon" class="w-10 md:w-12">
-          <h4 class="text-xs text-gray-600">npm</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/yarn-icon.svg" alt="yarn-icon" class="w-8 md:w-10">
-          <h4 class="text-xs text-gray-600 mt-1">Yarn</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/vite-icon.svg" alt="vite-icon" class="w-8 md:w-10">
-          <h4 class="text-xs text-gray-600 mt-1">Vite</h4>
-        </div>
-
-        <div class=" flex flex-col justify-between items-center">
-          <img src="./assets/git-icon.svg" alt="git-icon" class="w-7 pt-1 md:w-9">
-          <h4 class="text-xs text-gray-600">Git</h4>
-        </div>
-
-        
-      </div>
-    </section>
-
-
-    <!-- Contact me -->
-    <section id="contacts" class="p-14 bg-gray-50 overflow-hidden border-y border-gray-100">
-      <h1 class="font-semibold text-2xl text-teal-800 text-center tracking-widest">CONTACT ME</h1>
-      <div class="container mx-auto">
-        
-        
-        
-        <div class="mt-14 flex flex-col gap-3 md:w-2/3 md:mx-auto relative z-10">
-          <img src="./assets/contact-body-pic.svg" alt="contact-pic" class="absolute -right-20 bottom-10 lg:-bottom-10 w-[150px] lg:w-[300px] -z-10">
-          <div class="flex items-center gap-3 w-fit">
-            <img src="./assets/email-icon.svg" alt="email-icon">
-            <h2 class="font-medium text-sm md:text-lg text-gray-600">7Abdula@gmail.com</h2>
-          </div>
-  
-          <div class="flex items-center gap-3 w-fit">
-            <img src="./assets/phone-icon.svg" alt="phone-icon">
-            <h2 class="font-medium text-sm md:text-lg text-gray-600">+966 54 878 7300</h2>
-          </div>
-  
-          <div class="w-fit hover:translate-x-2 transition">
-            <a href="https://www.linkedin.com/in/7abdula/" target="_blank" class="flex items-center gap-3">
-              <img src="./assets/linkedin-icon.svg" alt="linkedin-icon">
-              <h2 class="font-medium text-sm md:text-lg text-gray-600">LinkedIn</h2>
-            </a>
-          </div>
-  
-          <div class="w-fit hover:translate-x-2 transition">
-            <a href="https://github.com/7Abdula" target="_blank" class="flex items-center gap-3">
-              <img src="./assets/github-icon-link.svg" alt="github-icon" class="w-6">
-              <h2 class="font-medium text-sm md:text-lg text-gray-600">GitHub</h2>
-            </a>
-          </div>
-          <a href="https://drive.google.com/uc?export=download&id=10hkMDad6-6A0i17Ens2SNjY9mSM2rh9o" download="Abdullah_Alqahtani_CV" class="resume font-semibold text-gray-50 rounded-lg py-2 px-10 mt-10 hover:bg-teal-800 drop-shadow-[0_4px_4px_rgba(122,122,122,0.5)] mx-auto hover:translate-x-2 transition">Download CV</a>
-        </div>
-
       </div>
 
-    </section>
+      <!-- Card 2 -->
+      <div
+        class="py-10 px-9 rounded-lg text-center bg-white drop-shadow-[0_8px_12px_rgba(122,122,122,0.1)] max-w-sm hover:-translate-y-4 transition ease-out duration-300">
+        <h1 class="font-semibold text-gray-700 text-xl">Project 2</h1>
+        <p class="font-light text-gray-600 text-sm leading-5 tracking-wide mt-4">Amet asperiores et impedit aliquam
+          consectetur? Voluptates sed a nulla ipsa officia et esse aliquam</p>
+        <h2 class="font-medium text-base text-gray-700 mt-5">Technologies</h2>
+        <p class="text-sm text-gray-500 mt-1 tracking-wide">Tailwindcss | ReactJS | Vite</p>
+
+        <div class="flex justify-around mt-8">
+          <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.5 11.6667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H8.33333M11.25 8.75L17.5 2.5L11.25 8.75ZM13.3333 2.5H17.5V6.66667L13.3333 2.5Z"
+                stroke="#115E59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Live demo
+          </a>
+          <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                fill="#115E59" />
+            </svg>
+            View code
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="py-10 px-9 rounded-lg text-center bg-white drop-shadow-[0_8px_12px_rgba(122,122,122,0.1)] max-w-sm hover:-translate-y-4 transition ease-out duration-300">
+        <h1 class="font-semibold text-gray-700 text-xl">Project 3</h1>
+        <p class="font-light text-gray-600 text-sm leading-5 tracking-wide mt-4">Amet asperiores et impedit aliquam
+          consectetur? Voluptates sed a nulla ipsa officia et esse aliquam</p>
+        <h2 class="font-medium text-base text-gray-700 mt-5">Technologies</h2>
+        <p class="text-sm text-gray-500 mt-1 tracking-wide">Tailwindcss | ReactJS | Vite</p>
+
+        <div class="flex justify-around mt-8">
+          <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.5 11.6667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H8.33333M11.25 8.75L17.5 2.5L11.25 8.75ZM13.3333 2.5H17.5V6.66667L13.3333 2.5Z"
+                stroke="#115E59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Live demo
+          </a>
+          <a href="" class="text-center flex flex-col justify-center items-center text-xs gap-1 text-gray-600">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                fill="#115E59" />
+            </svg>
+            View code
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
-    <footer class="py-4">
-      <h3 class="text-xs md:text-sm font-light text-gray-600 text-center">&copy;	2022 - Designed and created by Abdula</h3>
-    </footer>
+  <!-- Skills section -->
+  <section id="skills" class="pt-14 pb-20 container mx-auto">
+    <h1 class="font-semibold text-2xl text-teal-800 text-center tracking-widest">SKILLS</h1>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+    <!-- Skills Icons -->
+    <div class="pt-14 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 auto-cols-auto	 gap-14 w-max mx-auto">
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/html5-icon.svg" alt="html-icon" class="w-8 md:w-10">
+        <h4 class="text-xs text-gray-600 mt-1">HTML5</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/css3-icon.svg" alt="css-icon" class="w-8 md:w-10">
+        <h4 class="text-xs text-gray-600 mt-1">CSS3</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/tailwindcss-icon.svg" alt="tailwindcss-icon" class="w-8 pt-2 md:w-10">
+        <h4 class="text-xs text-gray-600 mt-1">Tailwindcss</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/js-icon.svg" alt="js-icon" class="w-8 md:w-10">
+        <h4 class="text-xs text-gray-600 mt-1">JavaScript</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/react-icon.svg" alt="react-icon" class="w-8 pt-1 md:w-10">
+        <h4 class="text-xs text-gray-600">React</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/alpinejs-icon.svg" alt="alpinejs-icon" class="pt-2 md:w-12">
+        <h4 class="text-xs text-gray-600">Alpine.js</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/sass-icon.svg" alt="sass-icon" class="w-9 md:w-12">
+        <h4 class="text-xs text-gray-600 mt-1">Sass</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/figma-icon.svg" alt="figma-icon" class="w-5 md:w-8">
+        <h4 class="text-xs text-gray-600 mt-1">Figma</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/npm-icon.svg" alt="npm-icon" class="w-10 md:w-12">
+        <h4 class="text-xs text-gray-600">npm</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/yarn-icon.svg" alt="yarn-icon" class="w-8 md:w-10">
+        <h4 class="text-xs text-gray-600 mt-1">Yarn</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/vite-icon.svg" alt="vite-icon" class="w-8 md:w-10">
+        <h4 class="text-xs text-gray-600 mt-1">Vite</h4>
+      </div>
+
+      <div class=" flex flex-col justify-between items-center">
+        <img src="./assets/git-icon.svg" alt="git-icon" class="w-7 pt-1 md:w-9">
+        <h4 class="text-xs text-gray-600">Git</h4>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Contact me -->
+  <section id="contacts" class="p-14 bg-gray-50 overflow-hidden border-y border-gray-100">
+    <h1 class="font-semibold text-2xl text-teal-800 text-center tracking-widest">CONTACT ME</h1>
+    <div class="container mx-auto">
+
+
+
+      <div class="mt-14 flex flex-col gap-3 md:w-2/3 md:mx-auto relative z-10">
+        <img src="./assets/contact-body-pic.svg" alt="contact-pic"
+          class="absolute -right-20 bottom-10 lg:-bottom-10 w-[150px] lg:w-[300px] -z-10">
+        <div class="flex items-center gap-3 w-fit">
+          <img src="./assets/email-icon.svg" alt="email-icon">
+          <h2 class="font-medium text-sm md:text-lg text-gray-600">7Abdula@gmail.com</h2>
+        </div>
+
+        <div class="flex items-center gap-3 w-fit">
+          <img src="./assets/phone-icon.svg" alt="phone-icon">
+          <h2 class="font-medium text-sm md:text-lg text-gray-600">+966 54 878 7300</h2>
+        </div>
+
+        <div class="w-fit hover:translate-x-2 transition">
+          <a href="https://www.linkedin.com/in/7abdula/" target="_blank" class="flex items-center gap-3">
+            <img src="./assets/linkedin-icon.svg" alt="linkedin-icon">
+            <h2 class="font-medium text-sm md:text-lg text-gray-600">LinkedIn</h2>
+          </a>
+        </div>
+
+        <div class="w-fit hover:translate-x-2 transition">
+          <a href="https://github.com/7Abdula" target="_blank" class="flex items-center gap-3">
+            <img src="./assets/github-icon-link.svg" alt="github-icon" class="w-6">
+            <h2 class="font-medium text-sm md:text-lg text-gray-600">GitHub</h2>
+          </a>
+        </div>
+        <a href="https://drive.google.com/uc?export=download&id=10hkMDad6-6A0i17Ens2SNjY9mSM2rh9o"
+          download="Abdullah_Alqahtani_CV"
+          class="resume font-semibold text-gray-50 rounded-lg py-2 px-10 mt-10 hover:bg-teal-800 drop-shadow-[0_4px_4px_rgba(122,122,122,0.5)] mx-auto hover:translate-x-2 transition">Download
+          CV</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer class="py-4">
+    <h3 class="text-xs md:text-sm font-light text-gray-600 text-center">&copy; 2022 - Designed and created by Abdula
+    </h3>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
