@@ -12,6 +12,13 @@
   }
 }
 
+@media (min-width: 350px) {
+  .title {
+    display: block;
+  }
+  
+}
+
 .resume {
   background: linear-gradient(84.09deg, #115E59 46.29%, rgba(17, 94, 89, 0) 233.4%);
 }
