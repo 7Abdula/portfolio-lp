@@ -5,7 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"
+    ></script>
     <title>Portfolio</title>
   </head>
 
@@ -14,16 +17,30 @@
     <nav x-data="{ open: false }" class="bg-gray-50 border-b border-gray-100">
       <div class="container mx-auto flex md:px-20 px-5 py-5 items-center">
         <img src="./assets/logo.svg" alt="logo" class="cursor-pointer" />
-        <h1 class="ml-3 font-semibold text-xl text-teal-800 title hidden cursor-pointer">
+        <h1
+          class="ml-3 font-semibold text-xl text-teal-800 title hidden cursor-pointer"
+        >
           Abdula's Portfolio
         </h1>
 
         <ul
           class="md:flex md:flex-row flex-col items-center gap-6 text-teal-800 hidden ml-auto font-medium"
         >
-          <li><a href="#projects" class="hover:text-gray-700 font-semibold">Projects</a></li>
-          <li><a href="#skills" class="hover:text-gray-700 font-semibold">Skills</a></li>
-          <li><a href="#contacts" class="hover:text-gray-700 font-semibold">Contacts</a></li>
+          <li>
+            <a href="#projects" class="hover:text-gray-700 font-semibold"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-gray-700 font-semibold"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#contacts" class="hover:text-gray-700 font-semibold"
+              >Contacts</a
+            >
+          </li>
         </ul>
         <div class="ml-auto shrink-0 flex flex-col overflow-hidden md:hidden">
           <button href="" class="pt-2" @click="open = !open">
@@ -42,13 +59,23 @@
               @click="open = false"
             >
               <li class="py-3">
-                <a href="#projects" class="hover:font-medium hover:text-teal-800">Projects</a>
+                <a
+                  href="#projects"
+                  class="hover:font-medium hover:text-teal-800"
+                  >Projects</a
+                >
               </li>
               <li class="py-3 w-full">
-                <a href="#skills" class="hover:font-medium hover:text-teal-800">Skills</a>
+                <a href="#skills" class="hover:font-medium hover:text-teal-800"
+                  >Skills</a
+                >
               </li>
               <li class="py-3">
-                <a href="#contacts" class="hover:font-medium hover:text-teal-800">Contacts</a>
+                <a
+                  href="#contacts"
+                  class="hover:font-medium hover:text-teal-800"
+                  >Contacts</a
+                >
               </li>
             </ul>
           </div>
@@ -67,20 +94,28 @@
         <h1 class="text-gray-500 text-2xl md:text-4xl mt-8">
           Hi, I am <span class="text-teal-800 font-semibold">Abdula</span>
         </h1>
-        <p class="text-gray-500 text-sm md:text-xl leading-5 mt-3 sm:px-20 mx-auto">
-          <span class="font-medium text-gray-600">Front-End Developer</span> passionate about
-          learning and development with a desire to apply skills on a larger development team. Eager
-          to tackle more complex problems and continue to find ways to maximize user efficiency.
+        <p
+          class="text-gray-500 text-sm md:text-xl leading-5 mt-3 sm:px-20 mx-auto"
+        >
+          <span class="font-medium text-gray-600">Front-End Developer</span>
+          passionate about learning and development with a desire to apply
+          skills on a larger development team. Eager to tackle more complex
+          problems and continue to find ways to maximize user efficiency.
         </p>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="projects pt-14 pb-24 bg-gray-50 border-y border-gray-100">
+    <section
+      id="projects"
+      class="projects pt-14 pb-24 bg-gray-50 border-y border-gray-100"
+    >
       <h1 class="font-semibold text-2xl text-teal-800 text-center">Projects</h1>
 
       <!-- Project cards -->
-      <div class="px-10 pt-14 flex flex-wrap justify-center items-center gap-14 container mx-auto">
+      <div
+        class="px-10 pt-14 flex flex-wrap justify-center items-center gap-14 container mx-auto"
+      >
         <!-- Card 1 -->
         <div
           class="min-h-[384px] py-10 px-9 rounded-lg text-center bg-white drop-shadow-[0_8px_12px_rgba(122,122,122,0.1)] max-w-sm hover:drop-shadow-[0_8px_12px_rgba(122,122,122,0.4)] transition ease-out duration-300"
@@ -88,12 +123,15 @@
           <h1 class="font-semibold text-gray-700 text-xl">Astronomy Picture</h1>
 
           <p class="text-gray-700 text-sm leading-5 mt-4">
-            Astronomy picture of the day is a react app linked to NASA API to retrieve the astronomy
-            picture of the day and some information related to that picture. Click the button when
-            you visit the website and enjoy the experience.
+            Astronomy picture of the day is a react app linked to NASA API to
+            retrieve the astronomy picture of the day and some information
+            related to that picture. Click the button when you visit the website
+            and enjoy the experience.
           </p>
           <h2 class="font-medium text-gray-700 mt-5">Tools</h2>
-          <p class="text-sm text-gray-600 mt-1">Tailwindcss | React | React hooks | Axios | API</p>
+          <p class="text-sm text-gray-600 mt-1">
+            Tailwindcss | React | React hooks | Axios | API
+          </p>
           <div class="flex justify-around mt-4">
             <a
               href="https://astronomy-picture-nasa.netlify.app/"
@@ -126,18 +164,23 @@
         >
           <h1 class="font-semibold text-gray-700 text-xl">Yoko</h1>
           <p class="text-gray-700 text-sm leading-5 mt-4">
-            Yoko is a movie search app built with React. The movies data is from OMDb API. You enter
-            any movie's name and press enter or click on the search button and the movies will be
-            rendered on the page. The UI was designed by
+            Yoko is a movie search app built with React. The movies data is from
+            OMDb API. You enter any movie's name and press enter or click on the
+            search button and the movies will be rendered on the page. The UI
+            was designed by
             <span class="font-medium text-teal-800 border-b"
-              ><a href="https://www.linkedin.com/in/saud-alarjani-872564217/" target="_blank"
+              ><a
+                href="https://www.linkedin.com/in/saud-alarjani-872564217/"
+                target="_blank"
                 >Saud.</a
               ></span
             >
           </p>
 
           <h2 class="font-medium text-gray-700 mt-6">Tools</h2>
-          <p class="text-sm text-gray-600 mt-1">Tailwindcss | React | React hooks | API</p>
+          <p class="text-sm text-gray-600 mt-1">
+            Tailwindcss | React | React hooks | API
+          </p>
           <div class="flex justify-around mt-4">
             <a
               href="https://7abdula.github.io/yoko-movie-search/"
@@ -171,7 +214,8 @@
           <h1 class="font-semibold text-gray-700 text-xl">Equalizer</h1>
 
           <p class="text-gray-700 text-sm leading-5 mt-4">
-            Equalizer is a simple landing page. The design was taken from front end mentor site.
+            Equalizer is a simple landing page. The design was taken from front
+            end mentor site.
           </p>
           <h2 class="font-medium text-gray-700 mt-20">Tools</h2>
           <p class="text-sm text-gray-600 mt-1">Tailwindcss</p>
@@ -212,12 +256,20 @@
         class="pt-14 grid grid-cols-2 md:grid-cols-4 auto-cols-auto gap-8 sm:gap-14 w-max mx-auto"
       >
         <div class="flex flex-col justify-between items-center">
-          <img src="./assets/html5-icon.svg" alt="html-icon" class="w-8 md:w-10" />
+          <img
+            src="./assets/html5-icon.svg"
+            alt="html-icon"
+            class="w-8 md:w-10"
+          />
           <h4 class="text-xs text-gray-600 mt-1">HTML5</h4>
         </div>
 
         <div class="flex flex-col justify-between items-center">
-          <img src="./assets/css3-icon.svg" alt="css-icon" class="w-8 md:w-10" />
+          <img
+            src="./assets/css3-icon.svg"
+            alt="css-icon"
+            class="w-8 md:w-10"
+          />
           <h4 class="text-xs text-gray-600 mt-1">CSS3</h4>
         </div>
 
@@ -236,32 +288,55 @@
         </div>
 
         <div class="flex flex-col justify-between items-center">
-          <img src="./assets/react-icon.svg" alt="react-icon" class="w-8 pt-1 md:w-10" />
+          <img
+            src="./assets/react-icon.svg"
+            alt="react-icon"
+            class="w-8 pt-1 md:w-10"
+          />
           <h4 class="text-xs text-gray-600">React</h4>
         </div>
 
         <div class="flex flex-col justify-between items-center">
-          <img src="./assets/alpinejs-icon.svg" alt="alpinejs-icon" class="pt-2 md:w-12" />
+          <img
+            src="./assets/alpinejs-icon.svg"
+            alt="alpinejs-icon"
+            class="pt-2 md:w-12"
+          />
           <h4 class="text-xs text-gray-600">Alpine.js</h4>
         </div>
 
         <div class="flex flex-col justify-between items-center">
-          <img src="./assets/figma-icon.svg" alt="figma-icon" class="w-5 md:w-8" />
+          <img
+            src="./assets/figma-icon.svg"
+            alt="figma-icon"
+            class="w-5 md:w-8"
+          />
           <h4 class="text-xs text-gray-600 mt-1">Figma</h4>
         </div>
 
         <div class="flex flex-col justify-between items-center">
-          <img src="./assets/git-icon.svg" alt="git-icon" class="w-7 pt-1 md:w-9" />
+          <img
+            src="./assets/git-icon.svg"
+            alt="git-icon"
+            class="w-7 pt-1 md:w-9"
+          />
           <h4 class="text-xs text-gray-600">Git</h4>
         </div>
       </div>
     </section>
 
     <!-- Contact me -->
-    <section id="contacts" class="p-14 bg-gray-50 overflow-hidden border-y border-gray-100">
-      <h1 class="font-semibold text-2xl text-teal-800 text-center">Contact Me</h1>
+    <section
+      id="contacts"
+      class="p-14 bg-gray-50 overflow-hidden border-y border-gray-100"
+    >
+      <h1 class="font-semibold text-2xl text-teal-800 text-center">
+        Contact Me
+      </h1>
       <div class="container mx-auto">
-        <div class="mt-14 flex flex-col gap-3 md:w-2/3 md:mx-auto relative z-10">
+        <div
+          class="mt-14 flex flex-col gap-3 md:w-2/3 md:mx-auto relative z-10"
+        >
           <img
             src="./assets/contact-body-pic.svg"
             alt="contact-pic"
@@ -270,7 +345,7 @@
           <div class="flex items-center gap-3 w-fit">
             <img src="./assets/email-icon.svg" alt="email-icon" />
             <h2 class="font-medium text-sm md:text-lg text-gray-600 select-all">
-              7Abdula@gmail.com
+              AbdulaQaht@gmail.com
             </h2>
           </div>
 
@@ -288,18 +363,30 @@
               class="flex items-center gap-3"
             >
               <img src="./assets/linkedin-icon.svg" alt="linkedin-icon" />
-              <h2 class="font-medium text-sm md:text-lg text-gray-600">LinkedIn</h2>
+              <h2 class="font-medium text-sm md:text-lg text-gray-600">
+                LinkedIn
+              </h2>
             </a>
           </div>
 
           <div class="w-fit">
-            <a href="https://github.com/7Abdula" target="_blank" class="flex items-center gap-3">
-              <img src="./assets/github-icon-link.svg" alt="github-icon" class="w-6" />
-              <h2 class="font-medium text-sm md:text-lg text-gray-600">GitHub</h2>
+            <a
+              href="https://github.com/7Abdula"
+              target="_blank"
+              class="flex items-center gap-3"
+            >
+              <img
+                src="./assets/github-icon-link.svg"
+                alt="github-icon"
+                class="w-6"
+              />
+              <h2 class="font-medium text-sm md:text-lg text-gray-600">
+                GitHub
+              </h2>
             </a>
           </div>
           <a
-            href="https://drive.google.com/uc?export=download&id=12iM2aUHIreFGPyqxsH4q6y5EnsjYEV9x"
+            href="https://drive.google.com/uc?export=download&id=1RKv_q8EgwCvs-0wT1_dln_nWmBjy0iIu"
             download="Abdullah_Alqahtani_CV"
             class="btn font-semibold text-gray-50 rounded-lg py-2 px-10 mt-10 hover:bg-teal-800 drop-shadow-[0_4px_4px_rgba(122,122,122,0.5)] mx-auto transition"
             >Download CV</a
